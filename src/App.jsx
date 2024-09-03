@@ -14,11 +14,24 @@ function App() {
     setTasks([...tasks.filter((task) => task.id !== taskId)]);
   };
 
+  const updateTask = (newTask) => {
+    const updatedTaks = tasks.map((task) => {
+      if (task.id !== newTask.id) {
+        return task;
+      }
+      return newTask;
+    });
+    setTasks([...updatedTaks]);
+  };
   return (
     <div className="App">
       <div className="main">
         <TaskCreate onCreateTask={createTask} />
-        <TaskList tasks={tasks} onRemoveTask={removeTask} />
+        <TaskList
+          tasks={tasks}
+          onRemoveTask={removeTask}
+          onUpdateTask={updateTask}
+        />
       </div>
     </div>
   );
