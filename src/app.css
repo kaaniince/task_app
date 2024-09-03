@@ -1,0 +1,71 @@
+.App {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.task-button:hover {
+  border-color: #646cff;
+}
+.task-button:focus,
+.task-button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.task-create {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+}
+.task-input {
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  outline: none;
+}
+
+.task-icons {
+  font-size: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+.taskList {
+  width: 100%;
+  margin-top: 50px;
+}
